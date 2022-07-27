@@ -1,0 +1,13 @@
+starter\stepdefinitions\NssStepDefinitions.class
+starter\pageObjects\GoogleHomePage.class
+starter\pageObjects\AccountsPage.class
+starter\stepdefinitions\SearchStepDefinitions.class
+starter\pageObjects\SalesforcePage.class
+starter\stepdefinitions\ParameterDefinitions.class
+starter\CucumberTestSuite.class
+starter\pageObjects\WikipediaHomePage.class
+starter\pageObjects\NavigateTo.class
+starter\search\SearchForm.class
+starter\search\LookForInformation.class
+starter\search\WikipediaArticle.class
+starter\stepdefinitions\googleSearchStepDefinitions.class
