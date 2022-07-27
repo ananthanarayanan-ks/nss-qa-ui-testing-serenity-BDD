@@ -24,3 +24,10 @@ steps:
   inputs:
     script: mvn clean install
   displayName: 'Run Script'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/target/failsafe-reports/TEST-starter.CucumberTestSuite.xml'
+    mergeTestResults: true
+  continueOnError: true
+  condition: always()
