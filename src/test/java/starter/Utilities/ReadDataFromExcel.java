@@ -15,7 +15,7 @@ public class ReadDataFromExcel extends PageObject {
 	
 	public String getData(String sheetName, String dataValue, String columnName) throws IOException {
 		String actualValue = null;
-		FileInputStream fs = new FileInputStream("C:\\Users\\KSANANTH\\Desktop\\nss-qa-ui-testing-serenity-BDD\\src\\test\\resources\\TestData\\Test_Data.xlsx");
+		FileInputStream fs = new FileInputStream("D:/a/1/s/src/test/resources/TestData/Test_Data.xlsx");
 		//Creating a workbook
 		@SuppressWarnings("resource")
 		XSSFWorkbook workbook = new XSSFWorkbook(fs);
