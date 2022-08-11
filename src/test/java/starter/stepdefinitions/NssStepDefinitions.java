@@ -1,25 +1,33 @@
 package starter.stepdefinitions;
 
+import java.io.IOException;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.serenitybdd.core.pages.PageObject;
+import starter.Utilities.ReadDataFromExcel;
 import starter.pageObjects.AccountsPage;
 import starter.pageObjects.SalesforcePage;
+
 
 public class NssStepDefinitions extends PageObject{
 	
 	SalesforcePage sfPage;
 	AccountsPage accPage;
+	ReadDataFromExcel excelData;
 	
 	@Given("I am on the SalesForce login page")
-	public void openSalesForce() {
-	    sfPage.open();
+	public void openSalesForce() throws InterruptedException, IOException {
+		Thread.sleep(8000);
+		  System.out.println("The user name is---------------------------"+excelData.getData("Login", "System_Administrator", "Username"));
+		sfPage.open();
 	    
 	}
 
 	@When("I login to SalesForce")
-	public void loginToSalesForce() throws InterruptedException {
+	public void loginToSalesForce() throws InterruptedException, IOException {
 	  sfPage.login();  
+	  
 	}
 	
 	@When("I switch to {string} Application")

@@ -1,1 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="New Service Stack SalesForce Automation POC" skipped="0" tests="1" time="98.62" timestamp="2022-07-27 11:29:55"><testcase name="Performing a search operation"/></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="New Service Stack SalesForce Automation POC" skipped="0" tests="1" time="8.44" timestamp="2022-08-11 11:14:22"><testcase name="Performing a search operation"><error message="..\TestData\Test_Data.xlsx (The system cannot find the path specified)" type="java.io.FileNotFoundException">..\TestData\Test_Data.xlsx (The system cannot find the path specified)</error><system-err>..\TestData\Test_Data.xlsx (The system cannot find the path specified)&#13;
+starter.Utilities.ReadDataFromExcel.getData(ReadDataFromExcel.java:18)&#13;
+starter.stepdefinitions.NssStepDefinitions.openSalesForce(NssStepDefinitions.java:22)&#13;
+✽.I am on the SalesForce login page(file:///C:/Users/KSANANTH/Desktop/nss-qa-ui-testing-serenity-BDD/src/test/resources/features/NSS/NSS_SalesForce_POC.feature:6)&#13;
+</system-err></testcase></testsuite>

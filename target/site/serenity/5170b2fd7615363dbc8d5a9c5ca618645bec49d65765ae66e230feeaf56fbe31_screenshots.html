@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-07-2022 11:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-08-2022 12:25</span>
     <br style="clear:left"/>
 </div>
 
@@ -189,9 +189,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-x-circle-fill failure-icon fa-2x' title='FAILURE'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Performing a search operation
+                                <span class="failing-color">Performing a search operation
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -208,13 +208,47 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabledBuild info: version: '4.1.2', revision: '9a5a329c5a'System info: host: 'INLEN8520037637', ip: '10.78.82.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.pageObjects.SalesforcePage.switchApplication(SalesforcePage.java:36)<br />starter.stepdefinitions.NssStepDefinitions.switchSfApplication(NssStepDefinitions.java:35)<br />✽.I switch to "Sales" Application(file:///C:/Users/KSANANTH/Desktop/nss-qa-ui-testing-serenity-BDD/src/test/resources/features/NSS/NSS_SalesForce_POC.feature:10)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource16277446122695360094.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="da57db66ba50c838dba84a01665724ba4090309345384eaabadebc148121f6cb.png" title=" Given I am on the SalesForce login page" width="1920"/>
-                <img src="ce8438f3461a6bfbf10f66e3f602163041e53313b658f563e99b1bde9d849a36.png" title=" And I login to SalesForce" width="1920"/>
-                <img src="729c3835d4f8a6427099b789f69ff2d05cc523b1d984cb90522edfd7d9c8c4a5.png" title=" And I switch to &quot;Sales&quot; Application" width="1920"/>
-                <img src="5a2bad046a4eff41020b40370fb4d58d059905063029111a015b62b07d5dfb22.png" title=" And I navigate to &quot;Accounts&quot; page" width="1920"/>
-                <img src="3143f921176cbc8a8539eacb77fdaab9c13ee2d9a52a7c70483ab462d268b2dc.png" title=" And I create a &quot;Consumer&quot; account on &quot;Accounts&quot; page: <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="c0b72c58d75fadb0bef139b3adb73f81abdf57618227b57b0a0f63fc677a1210.png" title=" Given I am on the SalesForce login page" width="1920"/>
+                <img src="b84af779ecd904e367ed56b6c95521c2a0f2ddb7526a28e0cfe262a303fdd83b.png" title=" And I login to SalesForce" width="1920"/>
+                <img src="b84af779ecd904e367ed56b6c95521c2a0f2ddb7526a28e0cfe262a303fdd83b.png" title=" And I switch to &quot;Sales&quot; Application: <span class='failing-color'>FAILURE</span>" width="1920"/>
             </div>
         </div>
 

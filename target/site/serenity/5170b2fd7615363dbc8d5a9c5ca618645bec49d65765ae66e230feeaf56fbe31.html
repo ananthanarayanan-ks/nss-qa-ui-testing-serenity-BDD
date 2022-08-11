@@ -148,7 +148,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 27-07-2022 11:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 11-08-2022 11:14</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -180,9 +180,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="error-color">
                                     Performing a search operation
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -214,7 +214,6 @@
                     Steps
                 </th>
 
-                    <th width="150" class="greentext">Screenshots</th>
                 <th width="130" class="greentext">Outcome</th>
                 <th width="100" class="greentext"><i title="Duration" class="bi bi-stopwatch"></i></th>
             </tr>
@@ -222,12 +221,12 @@
                 <td colspan="5"></td>
             </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
 
                     <td width="50" class="step-icon">
                         <a name="0"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
                                 </span>
                     </td>
 
@@ -241,24 +240,53 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="5170b2fd7615363dbc8d5a9c5ca618645bec49d65765ae66e230feeaf56fbe31_screenshots.html#screenshots?screenshot=0">
-                                    <img src="da57db66ba50c838dba84a01665724ba4090309345384eaabadebc148121f6cb.png"
-                                         href="da57db66ba50c838dba84a01665724ba4090309345384eaabadebc148121f6cb.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">17s 520ms</span></td>
+                    <td width="130"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">8s 144ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">java.io.FileNotFoundException: ..\TestData\Test_Data.xlsx (The system cannot find the path specified)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-1"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-1">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.io.FileNotFoundException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>starter.Utilities.ReadDataFromExcel.getData(ReadDataFromExcel.java:18)<br />starter.stepdefinitions.NssStepDefinitions.openSalesForce(NssStepDefinitions.java:22)<br />✽.I am on the SalesForce login page(file:///C:/Users/KSANANTH/Desktop/nss-qa-ui-testing-serenity-BDD/src/test/resources/features/NSS/NSS_SalesForce_POC.feature:6)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="1"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -272,24 +300,15 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="5170b2fd7615363dbc8d5a9c5ca618645bec49d65765ae66e230feeaf56fbe31_screenshots.html#screenshots?screenshot=1">
-                                    <img src="ce8438f3461a6bfbf10f66e3f602163041e53313b658f563e99b1bde9d849a36.png"
-                                         href="ce8438f3461a6bfbf10f66e3f602163041e53313b658f563e99b1bde9d849a36.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">46s 981ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">013ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="2"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -303,24 +322,15 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="5170b2fd7615363dbc8d5a9c5ca618645bec49d65765ae66e230feeaf56fbe31_screenshots.html#screenshots?screenshot=2">
-                                    <img src="729c3835d4f8a6427099b789f69ff2d05cc523b1d984cb90522edfd7d9c8c4a5.png"
-                                         href="729c3835d4f8a6427099b789f69ff2d05cc523b1d984cb90522edfd7d9c8c4a5.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">10s 412ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">006ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="3"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -334,24 +344,15 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="5170b2fd7615363dbc8d5a9c5ca618645bec49d65765ae66e230feeaf56fbe31_screenshots.html#screenshots?screenshot=3">
-                                    <img src="5a2bad046a4eff41020b40370fb4d58d059905063029111a015b62b07d5dfb22.png"
-                                         href="5a2bad046a4eff41020b40370fb4d58d059905063029111a015b62b07d5dfb22.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">4s 540ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">004ms</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
 
                     <td width="50" class="step-icon">
                         <a name="4"></a>
                             <span style="margin-left: 20px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
+                                  class="top-level-icon"><a href='##beforetable'><i class='bi bi-skip-forward skipped-icon ' title='SKIPPED'></i></a>
                                 </span>
                     </td>
 
@@ -365,22 +366,13 @@
                         </div>
                     </td>
 
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="5170b2fd7615363dbc8d5a9c5ca618645bec49d65765ae66e230feeaf56fbe31_screenshots.html#screenshots?screenshot=4">
-                                    <img src="3143f921176cbc8a8539eacb77fdaab9c13ee2d9a52a7c70483ab462d268b2dc.png"
-                                         href="3143f921176cbc8a8539eacb77fdaab9c13ee2d9a52a7c70483ab462d268b2dc.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="130"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">18s 970ms</span></td>
+                    <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">005ms</span></td>
                 </tr>
-            <tr class="test-SUCCESS">
-                    <td colspan="3"></td>
-                <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                <td width="100"><span class="top-level-step"><em>98.62s</em></span></td>
+            <tr class="test-ERROR">
+                    <td colspan="2"></td>
+                <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
+                <td width="100"><span class="top-level-step"><em>8.44s</em></span></td>
             </tr>
 
         </table>

@@ -1,3 +1,4 @@
+starter\Utilities\ReadDataFromExcel.class
 starter\stepdefinitions\NssStepDefinitions.class
 starter\pageObjects\GoogleHomePage.class
 starter\pageObjects\AccountsPage.class
