@@ -35,7 +35,7 @@ steps:
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
   inputs:
-    targetPath: '**/nss-qa-ui-testing-serenity-BDD/target/site/serenity/index.html'
+    targetPath: 'target/site/serenity'
     artifact: 'HTML Report'
   continueOnError: true
   condition: always()
