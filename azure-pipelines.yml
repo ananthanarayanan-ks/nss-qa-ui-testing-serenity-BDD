@@ -31,7 +31,12 @@ steps:
     mergeTestResults: true
   continueOnError: true
   condition: always()
-
+- task: MaciejMaciejewski.azure-pipelines-cucumber.PublishCucumberReport.PublishCucumberReport@1
+  displayName: 'Publish Cucumber Report'
+  inputs:
+    jsonDir: target/site/serenity
+    outputPath: target/site/serenity
+    name: 'Cucumber_HTML_Report'
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
   inputs:
