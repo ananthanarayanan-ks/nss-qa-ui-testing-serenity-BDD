@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="New Service Stack SalesForce Automation POC" skipped="0" tests="1" time="8.44" timestamp="2022-08-11 11:14:22"><testcase name="Performing a search operation"><error message="..\TestData\Test_Data.xlsx (The system cannot find the path specified)" type="java.io.FileNotFoundException">..\TestData\Test_Data.xlsx (The system cannot find the path specified)</error><system-err>..\TestData\Test_Data.xlsx (The system cannot find the path specified)&#13;
-starter.Utilities.ReadDataFromExcel.getData(ReadDataFromExcel.java:18)&#13;
-starter.stepdefinitions.NssStepDefinitions.openSalesForce(NssStepDefinitions.java:22)&#13;
-✽.I am on the SalesForce login page(file:///C:/Users/KSANANTH/Desktop/nss-qa-ui-testing-serenity-BDD/src/test/resources/features/NSS/NSS_SalesForce_POC.feature:6)&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="New Service Stack SalesForce Automation POC" skipped="0" tests="1" time="34.5" timestamp="2022-12-01 04:54:27"><testcase name="Performing a search operation"><failure message="Expected enabled element was not enabled&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'INLEN8520037637', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'INLEN8520037637', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown</failure><system-err>Expected enabled element was not enabled
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'INLEN8520037637', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown&#13;
+starter.pageObjects.SalesforcePage.switchApplication(SalesforcePage.java:36)&#13;
+starter.stepdefinitions.NssStepDefinitions.switchSfApplication(NssStepDefinitions.java:35)&#13;
+✽.I switch to "Sales" Application(file:///C:/Users/KSANANTH/Desktop/nss-qa-ui-testing-serenity-BDD/src/test/resources/features/NSS/NSS_SalesForce_POC.feature:10)&#13;
 </system-err></testcase></testsuite>

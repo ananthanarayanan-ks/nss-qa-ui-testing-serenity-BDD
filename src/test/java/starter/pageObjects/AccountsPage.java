@@ -7,6 +7,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
 public class AccountsPage extends PageObject{
+	
 	@FindBy(xpath="//div[@title='New']")
 	public WebElementFacade newButton;
 	@FindBy(xpath="//legend[contains(text(),'Select a record type')]/following::span[contains(text(),'Consumer')]")

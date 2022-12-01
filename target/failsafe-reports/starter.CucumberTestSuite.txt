@@ -1,7 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: starter.CucumberTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.75 s <<< FAILURE! - in starter.CucumberTestSuite
-New Service Stack SalesForce Automation POC.Performing a search operation  Time elapsed: 8.707 s  <<< ERROR!
-java.io.FileNotFoundException: ..\TestData\Test_Data.xlsx (The system cannot find the path specified)
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 35.688 s <<< FAILURE! - in starter.CucumberTestSuite
+New Service Stack SalesForce Automation POC.Performing a search operation  Time elapsed: 34.881 s  <<< ERROR!
+net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException: Expected enabled element was not enabled
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for SalesforcePage.appLauncher to be clickable (tried for 5 second(s) with 100 milliseconds interval)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'INLEN8520037637', ip: '192.168.0.117', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: unknown
 
