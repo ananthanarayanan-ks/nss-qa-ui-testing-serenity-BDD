@@ -37,6 +37,7 @@ steps:
     jsonDir: target/site/serenity
     outputPath: target/site/serenity
     name: 'Cucumber_HTML_Report'
+    continueOnError: true
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
   inputs:
