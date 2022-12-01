@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: CmdLine@2
   inputs:
-    script: mvn test
+    script: mvn clean install
   displayName: 'Run Script'
 - task: PublishTestResults@2
   inputs:
