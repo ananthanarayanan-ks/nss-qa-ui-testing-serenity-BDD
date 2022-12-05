@@ -34,7 +34,7 @@ steps:
 - task: MaciejMaciejewski.azure-pipelines-cucumber.PublishCucumberReport.PublishCucumberReport@1
   displayName: 'Publish Cucumber Report'
   inputs:
-    jsonDir: target/site/serenity
+    jsonDir: target/serenity-reports/
     outputPath: target/site/serenity
     name: 'Cucumber_HTML_Report'
   continueOnError: true
